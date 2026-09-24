@@ -1,5 +1,5 @@
 //3a
-let tasks = ["work", "eat", "study"]; //Array of strings
+let tasks = ["work", "eat", "study"]; //Array of "task" strings
 
 //3b
 //add task arrow function
@@ -15,14 +15,14 @@ let listAllTasks=()=>{
         console.log(element);
     });
 }
-//
+// arrow function that deletes a task from the array
 let deleteTask = (task)=> {
     let index = tasks.indexOf(task);
     if(index > -1){
     tasks.splice(index, 1);
-    console.log(task + " has been deleted from my tasks")
+    console.log(task + " has been deleted from my tasks") // displays when successfully deleted
     }else{
-        console.log(task +" not found in my Tasks.")
+        console.log(task +" not found in my Tasks.") // displays if task doesnt exist or cant be deleted
     }
 
     
